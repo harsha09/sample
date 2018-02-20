@@ -1,7 +1,13 @@
 from math import log
 
+"""Bit-wise operation properties:
+1. When a number is shifted right by 1 bit, it's like dividing number with 2.
+2. To make a number odd by dividing with 2, shift number so that right most
+   '1' bit of the number is at position 0.
+"""
+
 def convert_even_to_odd(num):
-	"""Converts even number to odd number by dividing by 2.
+	"""Converts even number to odd number by dividing with 2.
 	First step:
 		Finding number of bits to shift to make it odd number.
 		Logic to calculate number of bits to shift is
